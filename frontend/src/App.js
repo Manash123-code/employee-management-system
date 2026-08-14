@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 
-// ⬇️ Ye do lines missing thi, inhe add karein:
-import EmployeeManagement from './Components/EmployeeManagement';
+// Exact file names:
+import EmployeeManagementApp from './Components/EmployeeManagementApp';
 import EmployeeDetails from './Components/EmployeeDetails';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navigate to="/employee" />} />
-          <Route path="/employee" element={<EmployeeManagement />} />
+          <Route path="/employee" element={<EmployeeManagementApp />} />
           <Route path="/employee/:id" element={<EmployeeDetails />} />
         </Routes>
       </BrowserRouter>
