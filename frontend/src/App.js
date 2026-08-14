@@ -1,7 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
-// Aapke existing imports (jaise EmployeeManagement, etc.)
+
+// ⬇️ Ye do lines missing thi, inhe add karein:
+import EmployeeManagement from './Components/EmployeeManagement';
+import EmployeeDetails from './Components/EmployeeDetails';
 
 function App() {
   return (
@@ -17,7 +20,7 @@ function App() {
         <p>Manage your employees and records easily.</p>
       </div>
 
-      {/* Routing */}
+      {/* Routes */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navigate to="/employee" />} />
