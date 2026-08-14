@@ -2,14 +2,13 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 
-// Exact file names:
 import EmployeeManagementApp from './Components/EmployeeManagementApp';
 import EmployeeDetails from './Components/EmployeeDetails';
 
 function App() {
   return (
     <div className="main-card">
-      {/* Header & Logo */}
+      {/* Centered Modern Header */}
       <div className="app-header">
         <div className="app-logo">
           <svg viewBox="0 0 24 24">
