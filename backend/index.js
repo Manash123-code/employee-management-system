@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 const cors = require('cors');
 const EmployeeRoutes = require('./Routes/EmployeeRoutes');
+const AuthRoutes = require('./Routes/AuthRoutes');
 const PORT = process.env.PORT || 8080;
 app.get('/',(req,res)=>{
     res.send('Employee Mgm server is running');
@@ -12,7 +13,7 @@ app.get('/',(req,res)=>{
 require('./Models/db');
 app.use(cors());
 app.use(bodyParser.json());
-
+app.use('/auth', AuthRoutes);
 app.use('/api/employees', EmployeeRoutes);
 
 
